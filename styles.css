@@ -1,0 +1,210 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #B7A7AE;
+    --secondary-color: #03dac6;
+    --error-color: #cf6679;
+    --surface-color: #1e1e1e;
+    --on-surface-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+}
+
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.montserrat-black {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
+.overline {
+    text-decoration: overline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-color: var(--error-color);
+}
+
+.underline-overline {
+    text-decoration: underline overline;
+    text-decoration-color: var(--primary-color);
+}
+
+.dotted-underline {
+    text-decoration: underline dotted;
+    text-decoration-color: var(--secondary-color);
+}
+
+.link-no-decoration {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.link-no-decoration:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.simple-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    color: var(--on-surface-color);
+}
+
+.blurred-shadow {
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.7);
+    font-size: 24px;
+}
+
+.multiple-shadow {
+    text-shadow: 1px 1px 2px black, 0 0 1em var(--primary-color), 0 0 0.2em var(--primary-color);
+    font-size: 24px;
+    color: var(--on-surface-color);
+}
+
+.neon-effect {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--secondary-color), 0 0 20px var(--secondary-color);
+    font-size: 28px;
+    color: #fff;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.font-style span {
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+.font-variant {
+    font-variant: normal;
+}
+
+.font-variant span {
+    font-variant: small-caps;
+    color: var(--primary-color);
+}
+
+.font-weight {
+    font-weight: normal;
+}
+
+.font-weight span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.font-size {
+    font-size: 16px;
+}
+
+.font-size span {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.line-height {
+    line-height: 1.2;
+}
+
+.line-height span {
+    line-height: 2.5;
+}
+
+.font-shorthand {
+    font: italic small-caps bold 20px/1.5 'Roboto', sans-serif;
+    color: var(--secondary-color);
+}
+
+.highlight {
+    background-color: rgba(187, 134, 252, 0.2);
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: var(--primary-color);
+}
+
+.colorful {
+    color: var(--error-color);
+    font-weight: bold;
+}
+
+.large-letters {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.rotated {
+    display: inline-block;
+    transform: rotate(15deg);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.scaled {
+    display: inline-block;
+    transform: scale(1.5);
+    color: var(--primary-color);
+    margin: 0 5px;
+}
